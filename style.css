@@ -2,13 +2,26 @@ body {
   margin: 0;
 }
 
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg {
+  background-color: lightgreen;
+}
+
 .head {
   width: 200px;
   margin: 0 auto;
   height: 150px;
   border-radius: 200px 200px 0 0;
   margin-bottom: 10px;
-  background-color: lightgreen;
 }
 
 .eyes {
@@ -46,7 +59,6 @@ body {
   height: 125px;
   border-radius: 100px;
   margin-top: 20px;
-  background-color: lightgreen;
 }
 
 .left_arm {
@@ -66,7 +78,6 @@ body {
   height: 200px;
   border-radius: 0 0 50px 50px;
   transition: border-radius 1s;
-  background-color: lightgreen;
 }
 
 .lower_body {
@@ -81,7 +92,6 @@ body {
   height: 120px;
   border-radius: 0 0 100px 100px;
   display: inline-block;
-  background-color: lightgreen;
 }
 
 .left_leg {
@@ -93,28 +103,28 @@ body {
 }
 
 .robots:hover .head {
-  animation: movehead 4s infinite;
+  animation: movehead 2s infinite;
 }
 
 .robots:hover .torso {
-  /*border-radius: 40%;*/
-  animation: movetorso 4s infinite;
+  border-radius: 40%;
+  animation: movetorso 2s infinite;
 }
 
 .robots:hover .left_arm {
-  animation: moveleftarm 4s infinite;
+  animation: moveleftarm 2s infinite;
 }
 
 .robots:hover .right_arm {
-  animation: moverightarm 4s infinite;
+  animation: moverightarm 2s infinite;
 }
 
 .robots:hover .left_leg {
-  animation: moveleftleg 4s infinite;
+  animation: moveleftleg 2s infinite;
 }
 
 .robots:hover .right_leg {
-  animation: moverightleg 4s infinite;
+  animation: moverightleg 2s infinite;
 }
 
 @keyframes movehead {
@@ -122,35 +132,20 @@ body {
     width: 200px;
   }
 
-  12% {
+  25% {
     width: 300px;
   }
 
-  24% {
+  50% {
     width: 200px;
   }
 
-  36% {
+  75% {
     width: 300px;
   }
 
-  48% {
-    width: 200px;
-  }
-  60% {
-	  width: 200px;
-  }
-  72% {
-	  width: 300px;
-  }
-  84% {
-	  width: 200px;
-  }
-  96% {
-	  width: 300px;
-  }
   100% {
-	  width: 200px;
+    width: 200px;
   }
 }
 
@@ -160,43 +155,23 @@ body {
     transform-origin: top center;
   }
 
-  12% {
+  25% {
     transform: rotate(90deg);
     transform-origin: top center;
   }
 
-  24% {
+  50% {
     transform: rotate(0deg);
     transform-origin: top center;
   }
 
-  36% {
+  75% {
     transform: rotate(90deg);
     transform-origin: top center;
   }
 
-  48% {
-    transform: rotate(0deg);
-    transform-origin: top center;
-  }
-  60% {
-	transform: rotate(0deg);
-	transform-origin: top center;
-  }
-  72% {
-	transform: rotate(-90deg);
-    transform-origin: top center; 
-  }
-  84% {
-	transform: rotate(0deg);
-    transform-origin: top center;
-  }
-  96% {
-	transform: rotate(-90deg);
-    transform-origin: top center;
-  }
   100% {
-	transform: rotate(0deg);
+    transform: rotate(0deg);
     transform-origin: top center;
   }
 }
@@ -207,43 +182,23 @@ body {
     transform-origin: top center;
   }
 
-  12% {
-    transform: rotate(90deg);
+  25% {
+    transform: rotate(-90deg);
     transform-origin: top center;
   }
 
-  24% {
+  50% {
     transform: rotate(0deg);
     transform-origin: top center;
   }
 
-  36% {
-    transform: rotate(90deg);
+  75% {
+    transform: rotate(-90deg);
     transform-origin: top center;
   }
 
-  48% {
-    transform: rotate(0deg);
-    transform-origin: top center;
-  }
-  60% {
-	transform: rotate(0deg);
-    transform-origin: top center;
-  }
-  72% {
-	  transform: rotate(-90deg);
-    transform-origin: top center;
-  }
-  84% {
-	  transform: rotate(0deg);
-    transform-origin: top center;
-  }
-  96% {
-	  transform: rotate(-90deg);
-    transform-origin: top center;
-  }
   100% {
-	  transform: rotate(0deg);
+    transform: rotate(0deg);
     transform-origin: top center;
   }
 }
@@ -253,35 +208,20 @@ body {
     transform: rotate(0deg);
   }
 
-  12% {
+  25% {
     transform: rotate(20deg);
   }
 
-  24% {
+  50% {
     transform: rotate(0deg);
   }
 
-  36% {
+  75% {
     transform: rotate(20deg);
   }
 
-  48% {
-    transform: rotate(0deg);
-  }
-    60% {
-	transform: rotate(0deg);
-  }
-  72% {
-	  transform: rotate(-20deg);
-  }
-  84% {
-	  transform: rotate(0deg);
-  }
-  96% {
-	  transform: rotate(-20deg);
-  }
   100% {
-	  transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -290,71 +230,29 @@ body {
     transform: rotate(0deg);
   }
 
-  12% {
-    transform: rotate(20deg);
+  25% {
+    transform: rotate(-20deg);
   }
 
-  24% {
+  50% {
     transform: rotate(0deg);
   }
 
-  36% {
-    transform: rotate(20deg);
+  75% {
+    transform: rotate(-20deg);
   }
 
-  48% {
-    transform: rotate(0deg);
-  }
-    60% {
-	transform: rotate(0deg);
-  }
-  72% {
-	  transform: rotate(-20deg);
-  }
-  84% {
-	  transform: rotate(0deg);
-  }
-  96% {
-	  transform: rotate(-20deg);
-  }
   100% {
-	  transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
 @keyframes movetorso {
-  0% {
+  from {
     transform: rotate(0deg);
   }
 
-  12% {
-    transform: rotate(-20deg);
-  }
-
-  24% {
-    transform: rotate(0deg);
-  }
-
-  36% {
-    transform: rotate(-20deg);
-  }
-
-  48% {
-    transform: rotate(0deg);
-  }
-    60% {
-	transform: rotate(0deg);
-  }
-  72% {
-	transform: rotate(20deg);
-  }
-  84% {
-	  transform: rotate(0deg);
-  }
-  96% {
-	  transform: rotate(20deg);
-  }
-  100% {
-	  transform: rotate(0deg);
+  to {
+    transform: rotate(360deg);
   }
 }
